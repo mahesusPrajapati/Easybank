@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --foot-color: hsl(228, 45%, 44%);
+
+}
+
+
+/*-------------------------- Reusable code----------------- */
+
+.btn{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    border-radius: 1.5rem;
+    height: 45px;
+    width: 150px;
+
+}
+
+.btn:hover{
+    background-image: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+}
+h1{
+    line-height: 6.5rem;
+    font-family: sans-serif;
+}
+p{
+    font-family: serif;
+}
+ a{
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ============================================================= */
+
+nav{
+    z-index: 1;
+}
+a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #27ae60 !important;
+    transition: all 0.3s linear !important;
+}
+a:hover{
+    color: #009432 !important;
+}
+
+.jc{
+    justify-content: space-around;
+}
+.rmove-flexGrow{
+    flex-grow: unset !important;
+}
+.hidimg{
+    display: none !important;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler-active{
+    display: none;
+}
+.navbar-toggler[area-expanded="true"]{
+    
+    background-image: url(../images/icon-close.svg);
+}
+.rmove-flexGrow ul{
+    text-align: center;
+    
+
+}
+
+/*------------------------------------------- .section-1------------------------------------ */
+.section-1{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-img{
+    float: right;
+}
+.right-img img{
+    position: relative;
+    width: 120%;
+    top: -80px;
+    right: -20px;
+
+}
+.right-img .imgover img{
+    position: absolute;
+    /* width: 45%; */
+    top: 0;
+    /* right: 0; */
+    /* margin-top: 10%; */
+    width: 500px;
+    height: 700px;
+    right: 0;
+     overflow-x: hidden !important  ;
+    float: inherit;
+}
+
+
+
+/*------------------------------------ Section-2----------------------- */
+.card{
+    border: none;
+}
+.card img{
+    width: 30%;
+}
+
+/*----------------------------------------- Section-3--------------------------------------- */
+
+
+.articals img{
+    width: 100%;
+    
+}
+
+.rmove-flexGrow{
+    flex-grow: unset !important;
+}
+.bgimgintro{
+    /* background-image: url("/images/bg-intro-desktop.svg"); */
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+/*--------------------------- footer---------------------------- */
+
+footer{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    padding: 4% 2%;
+    background-color: var(--foot-color);
+    justify-content: space-around;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+
+@media only screen and (max-width:990px){
+    
+    h1{
+        line-height: 3rem;
+    }
+    
+    .tog{
+        display: none;
+    }
+    .desimg{
+        display: none;
+        padding-top: -200px;
+        height: 500px;
+        width: 500px;
+    }
+    .hidimg{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .section-2 div{
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .right-img .imgover img{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 50%; */
+        padding: 2rem;
+    }
+
+}
